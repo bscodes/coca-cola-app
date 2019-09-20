@@ -12,4 +12,6 @@ function App() {
   );
 }
 
+/* https://aliozgur.gitbooks.io/git101/content/remote_repositoryler/remote_degisiklikleri_entegre_etmek.html */
+
 export default App;
