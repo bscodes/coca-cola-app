@@ -12,6 +12,16 @@ function App() {
   );
 }
 
-/* https://aliozgur.gitbooks.io/git101/content/remote_repositoryler/remote_degisiklikleri_entegre_etmek.html burayı incede */
+/* 
+önce git add . (nokta bir boşluktan sonra) ile tüm değişikleri git'e tanıtıyoruz
+sonra git commit -a ile tüm değişiklikleri local repoya ekliyoruz
+sonra git push origin master yazıp tamamını uzaktaki master'a yolluyoruz
+
+git pull origin master yazarak uzaktaki değişiklikleri projeye indiriyoruz
+
+ayrıntılar ibu sitede "https://medium.com/kodcular/k%C4%B1saca-git-ba0877d56663"
+
+
+*/
 
 export default App;
