@@ -1,0 +1,40 @@
+.product-img-box {
+    outline: none;
+    position: relative;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.product-img {
+    max-height: 750px;
+    margin: 0px auto;
+}
+/* mobile phones */
+@media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .product-img {
+        max-height: 450px;
+    }
+    .product-img-box {
+        margin-top: 0!important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .product-thumbnail .product-name {
+        display:none;
+    }
+}
+/* queries for iPad Pro (portrait) */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .product-thumbnail .product-name {
+        display:none;
+    }
+}
+
+.product-thumbnail .product-name h2 {
+    font-weight: 700;
+}

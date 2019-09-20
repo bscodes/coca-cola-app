@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .navbar-brand {
+        width: auto;
+        left: 50%;
+        transform: translateX(32%);
+    }
+}
