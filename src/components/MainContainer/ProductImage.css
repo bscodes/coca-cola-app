@@ -2,7 +2,7 @@
     outline: none;
     position: relative;
     text-align: center;
-    border: 1px solid red;
+    border: none;
 }
 
 .product-img {
@@ -37,4 +37,5 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 .product-thumbnail .product-name h2 {
     font-weight: 700;
+    font-size: 3.2rem;
 }
