@@ -50,7 +50,24 @@
 @media (min-width: 1281px) {
 
     .product-options .form-group .form-control {
-        width: 96%;
+        width: 64%;
     }
 
+}
+
+.product-options button {
+    background: #F40000;
+    border-radius: 8px;
+    width: 185px;
+    padding: 11px;
+}
+
+@media only screen and (max-width: 479px) {
+    .product-options button {
+        width: 100%;   
+    }
+}
+
+.input-value p {
+    font-weight: 700;
 }
