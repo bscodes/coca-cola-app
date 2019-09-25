@@ -68,6 +68,10 @@
     }
 }
 
+.input-value {
+    word-wrap: break-word;
+}
+
 .input-value p {
     font-weight: 700;
 }

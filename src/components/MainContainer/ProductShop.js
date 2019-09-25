@@ -7,61 +7,66 @@ class ProductShop extends Component {
         this.state = {
             name : "",
             fontSize : "",
-            boxWidth: "50"
+            boxWidth: "75"
         };
     }
     
     updateInputValue = (e) => {
-        const {name,boxWidth} = this.state;
+        const {name} = this.state;
         this.setState({
             [e.target.name] : e.target.value
         });
-        // eğer p'nin uzunluğu div'i geçiyorsa
-        // fontsize'da -1 yap
-        /* if (name.length >= 17) {
+        
+        if (name.length === 17) {
             this.setState({
-                fontSize : "19"
+                fontSize : "22"
+            })
+        } else if (name.length === 16) {
+            this.setState({
+                fontSize : "25"
+            })
+        } else if (name.length === 15) {
+            this.setState({
+                fontSize : "27"
+            })
+        } else if (name.length === 14) {
+            this.setState({
+                fontSize : "29"
             })
         } else if (name.length === 13) {
             this.setState({
-                fontSize : "31"
+                fontSize : "32"
             })
         } else if (name.length === 12) {
             this.setState({
-                fontSize : "28"
+                fontSize : "34"
             })
         } else if (name.length === 11) {
             this.setState({
-                fontSize : "31"
+                fontSize : "38"
             })
         } else if (name.length === 10) {
             this.setState({
-                fontSize : "34"
+                fontSize : "40"
             })
-        } else if (name.length === 9) {
-            this.setState({
-                fontSize : "38"
-            })
-        } else if (name.length === 8) {
-            this.setState({
-                fontSize : "42"
-            })
-        } else {
+        } else if (name.length <= 8) {
             this.setState({
                 fontSize : "44"
             })
-        } */
+        }
     }
+
+    
 
     addName = (e) => {
         e.preventDefault();
         // set add to cart 
     }
 
-    
-
     render() {
         const {name,fontSize,boxWidth} = this.state;
+        
+        
         return (
             <div className="col-lg-6 col-md-6 mb-4 product-shop">
                 <div className="product-right mb-4">
@@ -88,8 +93,8 @@ class ProductShop extends Component {
                                 />
                             </div>
                             <hr/>
-                            <div className="input-value" style={{width: boxWidth + '%'}}>
-                                <p className="input-value-text" style={{fontSize: fontSize+'px'}}>
+                            <div className="input-value" style={{width: boxWidth + '%', fontSize: fontSize+'px'}}>
+                                <p className="input-value-text" /* style={{fontSize: fontSize+'px'}} */>
                                 {name}
                                 </p>
                             </div>
