@@ -9,29 +9,28 @@
     max-height: 750px;
     margin: 0px auto;
 }
+
 /* mobile phones */
 @media only screen and (max-width: 1199px) and (min-width: 374px) {
     .product-img {
-        max-height: 450px;
+        max-height: 585px;
     }
+
     .product-img-box {
-        margin-top: 0!important;
+        margin-top: 0 !important;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .product-thumbnail .product-name {
-        display:none;
+        display: none;
     }
 }
+
 /* queries for iPad Pro (portrait) */
-@media only screen 
-and (min-width: 1024px) 
-and (max-height: 1366px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
     .product-thumbnail .product-name {
-        display:none;
+        display: none;
     }
 }
 
@@ -106,19 +105,30 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 @media only screen and (max-width: 479px) {
     .product-options button {
-        width: 100%;   
+        width: 100%;
     }
 }
 
 .input-value {
     position: absolute;
     word-wrap: break-word;
-    width: 190px;
-    border: solid 1px white;
+    width: 195px;
     height: 66px;
     top: 351px;
     margin-left: 30%;
     line-height: 100%;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .input-value {
+        position: absolute;
+        word-wrap: break-word;
+        width: 152px;
+        height: 47px;
+        top: 348px;
+        margin-left: 27%;
+        line-height: 91%;
+    }
 }
 
 .input-value p {

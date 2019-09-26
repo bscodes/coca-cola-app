@@ -24,41 +24,41 @@ class ProductShop extends Component {
             })
         } else if (name.length === 15) {
             this.setState({
-                fontSize : "25"
+                fontSize : "22"
             })
         } else if (name.length === 14) {
             this.setState({
-                fontSize : "27"
+                fontSize : "25"
             })
         } else if (name.length === 13) {
             this.setState({
-                fontSize : "29"
+                fontSize : "27"
             })
         } else if (name.length === 12) {
             this.setState({
-                fontSize : "32"
+                fontSize : "29"
             })
         } else if (name.length === 11) {
             this.setState({
-                fontSize : "34"
+                fontSize : "31"
             })
         } else if (name.length === 10) {
             this.setState({
-                fontSize : "38"
+                fontSize : "35"
             })
         } else if (name.length === 9) {
             this.setState({
-                fontSize : "40"
+                fontSize : "37"
             })
         } else if (name.length <= 8) {
             this.setState({
-                fontSize : "44"
+                fontSize : "42"
             })
         }
     }
 
 
-    addName = (e) => {
+    addToCart = (e) => {
         e.preventDefault();
         // set form sending settings
         
@@ -97,7 +97,7 @@ class ProductShop extends Component {
                             </h5>
                         </div>
                         <div className="product-options mt-4">
-                            <form onSubmit = {this.addName.bind(this)}>
+                            <form onSubmit = {this.addToCart.bind(this)}>
                                 <div className="form-group mb-4">
                                     <input 
                                     type="text" 
