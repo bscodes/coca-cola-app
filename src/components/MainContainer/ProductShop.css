@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "you2013bold";
+    src: url(../MainContainer/you2013bold.ttf)
+}
 .product-img-box {
     outline: none;
     position: relative;
@@ -13,7 +17,7 @@
 /* mobile phones */
 @media only screen and (max-width: 1199px) and (min-width: 374px) {
     .product-img {
-        max-height: 585px;
+        max-height: 598px;
     }
 
     .product-img-box {
@@ -110,6 +114,7 @@
 }
 
 .input-value {
+    font-family: "you2013bold","Helvetica Neue",Verdana,Arial,sans-serif;
     position: absolute;
     word-wrap: break-word;
     width: 195px;
@@ -125,9 +130,9 @@
         word-wrap: break-word;
         width: 152px;
         height: 47px;
-        top: 348px;
-        margin-left: 27%;
-        line-height: 91%;
+        top: 354px;
+        margin-left: 26%;
+        line-height: 82%;
     }
 }
 
