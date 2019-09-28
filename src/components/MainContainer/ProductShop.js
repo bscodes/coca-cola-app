@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import './ProductShop.css';
 import Image from './classic.png';
+import Product from './Product';
+
+const products = [
+    
+        {
+            id: 1,
+            productName: "",
+            price: 5.00
+        }
+]
 
 class ProductShop extends Component {
     constructor(props) {
@@ -87,6 +97,7 @@ class ProductShop extends Component {
                 {/*------------------------------------- image area end ---------------------------------*/}
                 <div className="col-lg-6 col-md-6 mb-4 product-shop">
                     <div className="product-right mb-4">
+                        <Product/>
                         <div className="product-name">
                             <h1>Original.</h1>
                         </div>
