@@ -65,13 +65,13 @@ class ProductShop extends Component {
 
    
     render() {
-        const {name,fontSize,/* id,productName,price,qty,addToCart */} = this.state;
+        const {name,fontSize} = this.state;
         
         
         return (
             <div>
                 {products.map((item,index) => {
-                        return <div className="row" id={index}>
+                        return <div className="row" key={index}>
                         {/*-------------------------------------image area------------------------------------- */}
                         
                         <div className="col-lg-6 mb-2 product-thumbnail">
@@ -118,7 +118,8 @@ class ProductShop extends Component {
                                             <h3>$ {item.price}</h3>
                                         </div>
                                     </div>
-                                    <button className="btn btn-danger btn-block mt-2">ADD TO CART</button>
+                                    <button onClick= {()=> this.props.addToCart(item)}
+                                    className="btn btn-danger btn-block mt-2">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>

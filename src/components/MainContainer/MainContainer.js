@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductShop from './ProductShop';
-import Product from './Product';
+import Cart from './Cart';
 
 
 class MainContainer extends Component {
@@ -9,18 +9,26 @@ class MainContainer extends Component {
         this.state = {
             cart: []
         }
-        this.addToCart = this.addToCart.bind(this)
     }
-    addToCart(item) {
+    addToCart = (item) => {
         const cart = [...this.state.cart, item]
         this.setState({cart})
 
+    }
+
+    removeFromCart = (index) => {
+        const cart = [...this.state.cart]
+        cart.splice(index, 1)
+        this.setState({cart}) 
     }
     render() {
         return (
             <div className="container">
                  <ProductShop addToCart={this.addToCart}/>
-                 <Product items={this.state.cart}/>
+                 <Cart 
+                 items={this.state.cart} 
+                 removeFromCart={this.removeFromCart}
+                 />
             </div>
         )
     }

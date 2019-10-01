@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 
-class Product extends Component {
+class Cart extends Component {
     total() {
         return this.props.items.reduce((total, item) => {
             return total + item.price
         }, 0)
     }
     render () {
-        if (this.props.items) {
+        if (this.props.items.length === 0 ) {
             return <div className="minicart">
                         <p>Cart is empty</p>
                    </div>
@@ -17,11 +17,13 @@ class Product extends Component {
                     <div className="cart-product-details">
                     
                         {this.props.items.map((item, index) => {
-                            return <div id={index}>
-                                <p className="p-name">${item.price}</p>
+                            return <div key={index}>
                                 <p className="p-name">{item.productName}</p>
-                                <button>Remove from cart</button>
-                            </div>
+                                <p className="p-name">${item.price}</p>
+                                <button 
+                                onClick={() => this.props.removeFromCart(index)}>
+                                Remove from cart</button>
+                            </div> 
                         })}
                         <p>Total: ${this.total()}</p>
                     </div>
@@ -29,4 +31,4 @@ class Product extends Component {
     }
 }
 
-export default Product;
+export default Cart;
