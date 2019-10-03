@@ -11,17 +11,25 @@ class Cart extends Component {
     }
     render () {
         if (this.props.items.length === 0 ) {
+            console.log("the cart is empty")
             return <div className="minicart">
-                        <p>Cart is empty</p>
+                        <div className="container d-flex justify-content-center">
+                            <div className="row">
+                                <div className="cart-body">
+                                    <h3>EMPTY</h3>
+                                </div>
+                            </div>
+                        </div>
                    </div>
         }
+        console.log("Items are added")
         return <div className="minicart">
-                    <div className="cart-product-details">
+                    <div className="container cart-product-details">
                     
                         {this.props.items.map((item, index) => {
                             return <div key={index}>
                                 <p className="p-name">{item.productName}</p>
-                                <p className="p-name">${item.price}</p>
+                                <p className="p-price">${item.price}</p>
                                 <button 
                                 onClick={() => this.props.removeFromCart(index)}>
                                 Remove from cart</button>
