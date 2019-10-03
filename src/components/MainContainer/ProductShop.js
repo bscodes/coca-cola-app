@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './ProductShop.css';
 import Image from './classic.png';
 
-const products = [
-    {
-        productName : "Original.", 
-        price: 5.00
-    }
-]
+
 
 class ProductShop extends Component {
     constructor(props) {
@@ -67,10 +63,7 @@ class ProductShop extends Component {
     render() {
         const {name,fontSize} = this.state;
         
-        
-        return (
-            <div>
-                {products.map((item,index) => {
+        return (<div> {this.props.items.map((item,index) => {
                         return <div className="row" key={index}>
                         {/*-------------------------------------image area------------------------------------- */}
                         
@@ -129,5 +122,20 @@ class ProductShop extends Component {
         )
     }
 }
+function mapStateToProps(state) {
+    return {
+         items: state.forSell
+    }
+}
 
-export default ProductShop;
+function mapDispatchToProps(dispatch) {
+    return {
+        addToCart : (item) => {
+            dispatch({
+                type: 'ADD_TO_CART',
+                item
+            })
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps) (ProductShop)

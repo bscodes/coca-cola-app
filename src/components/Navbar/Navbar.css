@@ -9,3 +9,9 @@
         transform: translateX(32%);
     }
 }
+
+@media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .dropdown-menu {
+        left: -112px;
+    }
+}

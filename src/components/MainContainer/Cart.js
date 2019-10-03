@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 class Cart extends Component {
+    
     total() {
         return this.props.items.reduce((total, item) => {
             return total + item.price
@@ -31,4 +33,20 @@ class Cart extends Component {
     }
 }
 
-export default Cart;
+function mapStateToProps(state) {
+    return {
+         items: state.cart
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        removeFromCart : (index) => {
+            dispatch({
+                type: 'REMOVE_FROM_CART',
+                index
+            })
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps) (Cart)
