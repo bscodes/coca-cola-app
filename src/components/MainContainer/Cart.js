@@ -13,11 +13,9 @@ class Cart extends Component {
         if (this.props.items.length === 0 ) {
             console.log("the cart is empty")
             return <div className="minicart">
-                        <div className="container d-flex justify-content-center">
-                            <div className="row">
-                                <div className="cart-body">
-                                    <h3>EMPTY</h3>
-                                </div>
+                        <div className="row">
+                            <div className="col-sm-12 text-center mb-5 mt-5">
+                                <h3>You have no items in your shopping cart.</h3>
                             </div>
                         </div>
                    </div>
@@ -25,17 +23,43 @@ class Cart extends Component {
         console.log("Items are added")
         return <div className="minicart">
                     <div className="container cart-product-details">
-                    
-                        {this.props.items.map((item, index) => {
-                            return <div key={index}>
-                                <p className="p-name">{item.productName}</p>
-                                <p className="p-price">${item.price}</p>
-                                <button 
-                                onClick={() => this.props.removeFromCart(index)}>
-                                Remove from cart</button>
-                            </div> 
-                        })}
-                        <p>Total: ${this.total()}</p>
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
+                            <table className="table table-borderless">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                
+
+                                
+                                {this.props.items.map((item, index) => {
+                                    return <tbody key={index}>
+                                    <th scope="row">1</th>
+                                    <td>{item.productName}</td>
+                                    <td>${item.price}</td>
+                                    <td><button className="btn btn-danger"
+                                    onClick={() => this.props.removeFromCart(index)}>
+                                    Remove</button></td>
+                                    </tbody> 
+                                    
+                                })}
+                                    
+                                    <tfoot>
+                                        <tr>
+                                            <td><h5>Total: </h5></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><h5>${this.total()}</h5></td>
+                                        </tr>
+                                    </tfoot>
+                            </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
     }

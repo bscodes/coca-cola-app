@@ -6,7 +6,11 @@
     .navbar-brand {
         width: auto;
         left: 50%;
-        transform: translateX(32%);
+    }
+
+    .fa-shopping-cart:before {
+        font-size: 24px;
+        margin-right: 20px;
     }
 }
 
@@ -16,6 +20,12 @@
     }
 }
 
-.nav-item .nav-link {
-    color: black;
+@media (min-width: 1281px) {
+    .nav-link svg {
+        padding-bottom: 5px;
+    }
+
+    .fa-shopping-cart:before {
+        font-size: 20px;
+    }
 }
