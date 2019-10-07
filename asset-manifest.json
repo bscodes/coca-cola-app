@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/coca-cola-app/static/css/main.31452b17.chunk.css",
+    "main.js": "/coca-cola-app/static/js/main.9cf5ab98.chunk.js",
+    "main.js.map": "/coca-cola-app/static/js/main.9cf5ab98.chunk.js.map",
+    "runtime~main.js": "/coca-cola-app/static/js/runtime~main.a8a74586.js",
+    "runtime~main.js.map": "/coca-cola-app/static/js/runtime~main.a8a74586.js.map",
+    "static/js/2.fbc84cd8.chunk.js": "/coca-cola-app/static/js/2.fbc84cd8.chunk.js",
+    "static/js/2.fbc84cd8.chunk.js.map": "/coca-cola-app/static/js/2.fbc84cd8.chunk.js.map",
+    "index.html": "/coca-cola-app/index.html",
+    "precache-manifest.18df46c510d0e4dd6174af05bb39f65e.js": "/coca-cola-app/precache-manifest.18df46c510d0e4dd6174af05bb39f65e.js",
+    "service-worker.js": "/coca-cola-app/service-worker.js",
+    "static/css/main.31452b17.chunk.css.map": "/coca-cola-app/static/css/main.31452b17.chunk.css.map",
+    "static/media/classic.png": "/coca-cola-app/static/media/classic.b818fbbe.png",
+    "static/media/logo.719fa52e.svg": "/coca-cola-app/static/media/logo.719fa52e.svg",
+    "static/media/ProductShop.css": "/coca-cola-app/static/media/you2013bold.3e2860a2.ttf"
+  }
+}
