@@ -1,0 +1,6 @@
+footer {
+    background-color: #272727;
+}
+#sticky-footer {
+    flex-shrink: none;
+  }
