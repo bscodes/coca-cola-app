@@ -146,3 +146,11 @@
     transform: translate3d(-50%, -50%, 0);
     color: white;
 }
+
+.minicart .empty-cart {
+    height: 700px;
+}
+
+.minicart .cart-product-details {
+    height: 900px;
+}

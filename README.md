@@ -1,3 +1,25 @@
+# A basic Coca Cola Store shopping cart with ReactJS
+
+You can see it live at https://bscodes.github.io/coca-cola-app/#/
+
+## Overview
+
+A small ecommerce application focussing on fundamentals of ReactJS. The web app consists of a Coca-Cola product page with a textInput and a product shopping cart page.
+
+## Technologies Used
+
+- ReactJS
+- JavaScript (ES6)
+- HTML5
+- Bootstrap 4 CSS framework
+- Redux
+- React Router
+- Git
+- GitHub
+- Npm
+
+## 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

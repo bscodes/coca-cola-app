@@ -1,18 +1,20 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './App.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../footer/footer';
-import MainContainer from '../MainContainer/MainContainer'
+import MainContainer from '../MainContainer/MainContainer';
+
+
 
 function App() {
   return (
     <div className="App">
-        <Router>
+        <HashRouter basename="/">
             <Navbar/>
             <MainContainer />
             <Footer/>
-        </Router>
+        </HashRouter>
     </div>
   );
 }

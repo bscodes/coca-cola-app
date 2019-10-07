@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './ProductShop.css';
 
 
 class Cart extends Component {
@@ -14,7 +15,7 @@ class Cart extends Component {
             console.log("the cart is empty")
             return <div className="minicart">
                         <div className="row">
-                            <div className="col-sm-12 text-center mb-5 mt-5">
+                            <div className="col-sm-12 text-center mb-5 mt-5 empty-cart">
                                 <h3>You have no items in your shopping cart.</h3>
                             </div>
                         </div>
