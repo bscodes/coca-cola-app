@@ -59,7 +59,6 @@ class ProductShop extends Component {
         }
     }
 
-   
     render() {
         const {name,fontSize} = this.state;
         

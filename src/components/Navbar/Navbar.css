@@ -29,3 +29,26 @@
         font-size: 20px;
     }
 }
+
+.cart-price {
+    position: absolute;
+    background: #ff4c3b;
+    width: 30px;
+    height: 20px;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    top: 20%;
+    right: 11%;
+    padding: 3px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .cart-price {
+        top: 18%;
+        right: 4%;
+    }
+}

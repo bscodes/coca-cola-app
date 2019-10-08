@@ -1,7 +1,8 @@
 const products = [
     {
         productName : "Original.", 
-        price: 5.00
+        price: 5.00,
+        units: 1
     }
 ]
 

@@ -29,10 +29,10 @@ class Cart extends Component {
                             <table className="table table-borderless">
                                 <thead>
                                     <tr>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Delete</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 
@@ -40,12 +40,14 @@ class Cart extends Component {
                                 
                                 {this.props.items.map((item, index) => {
                                     return <tbody key={index}>
-                                    <th scope="row">1</th>
+                                    <tr>
+                                    <th scope="row">{item.units}</th>
                                     <td>{item.productName}</td>
                                     <td>${item.price}</td>
                                     <td><button className="btn btn-danger"
                                     onClick={() => this.props.removeFromCart(index)}>
                                     Remove</button></td>
+                                    </tr>
                                     </tbody> 
                                     
                                 })}
