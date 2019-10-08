@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47566081dc4039ba04edd3e0b507270c",
+    "revision": "e8eef2a915180c0686695464a22d8200",
     "url": "/coca-cola-app/index.html"
   },
   {
-    "revision": "21d472753a75f852e5df",
-    "url": "/coca-cola-app/static/css/main.c4ec3e7b.chunk.css"
+    "revision": "974996e33843811fef08",
+    "url": "/coca-cola-app/static/css/main.9e744f00.chunk.css"
   },
   {
     "revision": "b3e8e125ffaf0cb43b1a",
     "url": "/coca-cola-app/static/js/2.3d081802.chunk.js"
   },
   {
-    "revision": "21d472753a75f852e5df",
+    "revision": "974996e33843811fef08",
     "url": "/coca-cola-app/static/js/main.6f30a00f.chunk.js"
   },
   {
