@@ -30,6 +30,8 @@
     }
 }
 
+
+
 .cart-price {
     position: absolute;
     background: #ff4c3b;
@@ -45,8 +47,21 @@
     right: 389px;
     padding: 3px;
 }
-
+/* for normal mobile phones */
 @media only screen and (max-width: 1199px) and (min-width: 374px) {
+    .cart-price {
+        top: 18%;
+        right: 4%;
+    }
+}
+
+/* for small mobile phones */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .nav-link i {
+        font-size: 26px;
+        padding-right: 15px;
+        padding-top: 5px;
+    }
     .cart-price {
         top: 18%;
         right: 4%;

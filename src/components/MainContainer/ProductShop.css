@@ -147,6 +147,14 @@
     color: white;
 }
 
+/* for normal mobile phones */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .input-value p {
+        top: 104%;
+        left: 29%;
+    }
+}
+
 .minicart .empty-cart {
     height: 700px;
 }
