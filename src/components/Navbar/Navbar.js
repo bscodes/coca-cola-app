@@ -28,9 +28,7 @@ import './Navbar.css';
                         </li> */}
                         <li className="nav-item active">
                             <Link to="/cart" className="nav-link">
-                                <div className="cart-price">
-                                $0
-                                </div>
+                                <div className="cart-price">$0</div>
                                 <i className="fas fa-shopping-cart"></i>
                             </Link>
                         </li>
