@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/coca-cola-app/static/css/main.92cb55da.chunk.css",
-    "main.js": "/coca-cola-app/static/js/main.1b353663.chunk.js",
-    "main.js.map": "/coca-cola-app/static/js/main.1b353663.chunk.js.map",
+    "main.css": "/coca-cola-app/static/css/main.17901a5f.chunk.css",
+    "main.js": "/coca-cola-app/static/js/main.e9494fdb.chunk.js",
+    "main.js.map": "/coca-cola-app/static/js/main.e9494fdb.chunk.js.map",
     "runtime~main.js": "/coca-cola-app/static/js/runtime~main.a8a74586.js",
     "runtime~main.js.map": "/coca-cola-app/static/js/runtime~main.a8a74586.js.map",
     "static/js/2.9bf517df.chunk.js": "/coca-cola-app/static/js/2.9bf517df.chunk.js",
     "static/js/2.9bf517df.chunk.js.map": "/coca-cola-app/static/js/2.9bf517df.chunk.js.map",
     "index.html": "/coca-cola-app/index.html",
-    "precache-manifest.c53948981b9c625c05b7b15ada41a862.js": "/coca-cola-app/precache-manifest.c53948981b9c625c05b7b15ada41a862.js",
+    "precache-manifest.887a41f5367350a4e135ee5de9c2058d.js": "/coca-cola-app/precache-manifest.887a41f5367350a4e135ee5de9c2058d.js",
     "service-worker.js": "/coca-cola-app/service-worker.js",
-    "static/css/main.92cb55da.chunk.css.map": "/coca-cola-app/static/css/main.92cb55da.chunk.css.map",
+    "static/css/main.17901a5f.chunk.css.map": "/coca-cola-app/static/css/main.17901a5f.chunk.css.map",
     "static/media/classic.png": "/coca-cola-app/static/media/classic.b818fbbe.png",
     "static/media/logo.719fa52e.svg": "/coca-cola-app/static/media/logo.719fa52e.svg",
     "static/media/ProductShop.css": "/coca-cola-app/static/media/you2013bold.3e2860a2.ttf"
