@@ -23,11 +23,11 @@ import './Navbar.css';
                         <ul className="navbar-nav ml-auto topnav">
                             <li className="nav-item active">
                                 <Link to="/cart" className="nav-link">
+                                    <i className="fas fa-shopping-cart">
                                     <div className="cart-price">
                                     {/* total price */}
                                     ${this.total()}
-                                    </div>
-                                    <i className="fas fa-shopping-cart">   
+                                    </div>   
                                     </i>
                                 </Link>
                             </li>
