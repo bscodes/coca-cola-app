@@ -39,16 +39,20 @@ class Cart extends Component {
 
                                 
                                 {this.props.items.map((item, index) => {
-                                    return <tbody key={index}>
-                                    <tr>
-                                    <th scope="row">{item.units}</th>
-                                    <td>{item.productName}</td>
-                                    <td>${item.price}</td>
-                                    <td><button className="btn btn-danger"
-                                    onClick={() => this.props.removeFromCart(index)}>
-                                    Remove</button></td>
-                                    </tr>
+                                    return(
+                                    <tbody key={index}>
+                                      <tr>
+                                        <th scope="row">{item.units}</th>
+                                        <td>{item.productName}</td>
+                                        <td>${item.price}</td>
+                                        <td>
+                                            <button className="btn btn-danger" onClick={() => this.props.removeFromCart(index)}>
+                                              Remove
+                                            </button>
+                                        </td>
+                                      </tr>
                                     </tbody> 
+                                    )
                                     
                                 })}
                                     
